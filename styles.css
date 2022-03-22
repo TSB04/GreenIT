@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: magenta;
+}
+
+li,
+a,
+button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: floralwhite;
+    text-decoration: none;
+}
+
+
+/** HEADER STYLE Starts **/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: black;
+}
+
+.logo {
+    width: 20%;
+    cursor: pointer;
+    /**border: 2px solid red;**/
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.min-logo {
+    width: 10%;
+    cursor: pointer;
+    display: none;
+    /**border: 2px solid red;**/
+}
+
+.min-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 0px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    padding: 52px 20px;
+    /**border: 2px solid red;**/
+}
+
+.nav_links li a:hover {
+    color: white;
+    background-color: green;
+}
+
+.btn-navbar {
+    width: 300px;
+}
+
+.inscription_navbar {
+    padding: 15px;
+    color: white;
+    background-color: deeppink;
+    border: none;
+}
+
+.inscription_navbar:hover {
+    background-color: crimson;
+    border: solid 1px white;
+}
+
+.connexion_navbar {
+    padding: 15px;
+    color: green;
+    background-color: black;
+    border: 1px dashed green;
+}
+
+.connexion_navbar:hover {
+    color: green;
+    border: solid 1px white;
+}
+
+
+/** HEADER STYLE Ends **/
+
+
+/** HERO STYLE HOME PAGE Starts **/
+
+.load {
+    animation: slide 2s;
+}
+
+.hero .slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 30s infinite;
+}
+
+.hero .content {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content .principal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.principal h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.principal p {
+    font-size: 20px;
+}
+
+.hero-discover-btn {
+    margin-left: 25%;
+    margin-top: 10%;
+    padding: 15px;
+    width: 50%;
+    height: 50%;
+    color: white;
+    background-color: mediumvioletred;
+    border: 1px solid white;
+    border-radius: 15%;
+}
+
+.hero-discover-btn a {
+    font-family: "Roboto";
+    font-size: 20pt;
+    text-align: center;
+}
+
+.hero-discover-btn:hover,
+.hero-discover-btn a:hover {
+    color: black;
+    background-color: white;
+    border: solid 1px white;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(/images/15e_Parc_Georges_Brassens.jpg);
+    }
+    20% {
+        background-image: url(/images/15e_Parc_Georges_Brassens.jpg);
+    }
+    20.01% {
+        background-image: url(/images/allee_des_cygnes.jpg);
+    }
+    40% {
+        background-image: url(/images/allee_des_cygnes.jpg);
+    }
+    40.01% {
+        background-image: url(/images/amadou_hampaté.jpg);
+    }
+    60% {
+        background-image: url(/images/amadou_hampaté.jpg);
+    }
+    60.01% {
+        background-image: url(/images/parc-andre-citroen-paris.JPG);
+    }
+    80% {
+        background-image: url(/images/parc-andre-citroen-paris.JPG);
+    }
+    80.01% {
+        background-image: url(/images/square-alex-biscarre.jpg);
+    }
+    100% {
+        background-image: url(/images/square-alex-biscarre.jpg);
+    }
+}
+
+
+/** HERO STYLE HOME PAGE Ends **/
+
+
+/** HERO STYLE PORTFOLIO Starts **/
+
+
+/** HERO STYLE PORTFOLIO Ends **/
+
+.hero-portfolio .slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    animation: slide 40s infinite;
+}
+
+.hero-portfolio .content {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-portfolio .content .principal {
+    left: 15%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+
+.hero-portfolio .principal h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.hero-portfolio .principal p {
+    font-size: 20px;
+    margin-left: 28%;
+    text-align: left;
+}
+
+
+/** PORFOLIO SECTION Starts **/
+
+.portfolio-section h2 {
+    width: 300px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    margin-left: 45%;
+    padding: 5px;
+    letter-spacing: 3px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+/*.wrapper {
+    margin: 100px auto;
+    max-width: 1100px;
+}*/
+
+.wrapper {
+    margin: 100px auto;
+    max-width: 95%;
+    padding: 0.5% 1%;
+}
+
+.wrapper nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav .items {
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav .items .item {
+    padding: 7px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: green;
+    background-color: white;
+    margin-left: 5px;
+    border: 2px solid green;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/*.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}*/
+
+nav .items .active,
+nav .items .item:hover {
+    color: white;
+    background-color: green;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.image {
+    margin: 1% 0;
+}
+
+.gallery .image {
+    width: calc(100% / 4);
+    padding: 7px;
+}
+
+.gallery .image.hide {
+    display: none;
+}
+
+.gallery .image.show {
+    animation: animate 0.4s ease;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.gallery .image span {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery .image img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.gallery .image:hover img {
+    transform: scale(1.1);
+}
+
+
+/** PORTFOLIO SECTION Ends**/
+
+.card {
+    cursor: pointer;
+    width: 340px;
+    height: 480px;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s linear;
+}
+
+.front img {
+    height: 100%;
+}
+
+.front {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+    background: #946b6b;
+    transform: perspective(600px) rotateY(180deg);
+    position: relative;
+    top: -100%;
+}
+
+.back-content {
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sm {
+    margin: 50px 10px;
+}
+
+.sm a {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.sm a:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+
+/** back content End **/
+
+.card:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover>.back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+
+/** Start js work **/
+
+.preview-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: #fff;
+    width: 800px;
+    max-width: max-content;
+    height: max-content;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    padding: 0 5px 5px 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.preview-box.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
+}
+
+.preview-box .details {
+    padding: 13px 15px 13px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details .title {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.details .title p {
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.details .icon {
+    color: #aa9a9a;
+    font-style: 22px;
+    cursor: pointer;
+}
+
+.preview-box .image-box {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+}
+
+.shadow {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.shadow.show {
+    display: block;
+}

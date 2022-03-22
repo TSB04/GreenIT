@@ -1,0 +1,65 @@
+
+@media(max-width: 800px){
+    .gallery .image{
+        width: calc(100% / 2);
+    }
+
+    .hero-portfolio .principal{
+        margin-left: 30%;
+    }
+    .hero-portfolio .principal p{
+        margin-left: 10%;
+        align-content: center;
+    }
+
+    .portfolio-section h2{
+        margin-left: 25%;
+    }
+
+    nav .items{
+        max-width: 800px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav .items .item{
+        padding: 7px 15px;
+        margin: 10px;
+    }
+    .nav_links{
+        display: none;
+    }
+
+    .btn-navbar{
+        display: none;
+    } 
+
+    .logo{
+        width: 50%;
+    }
+    
+    .min-logo{
+        display: block;
+    }
+}
+
+@media(max-width: 600px){
+    nav .items{
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    nav .items .item{
+        margin: 5px;
+    }
+    .gallery .image{
+        width: 100%;
+    }
+
+    .logo{
+        width: 52%;
+    }
+
+    .min-logo{
+        display: block;
+    }
+}
